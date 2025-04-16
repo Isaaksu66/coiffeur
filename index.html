@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestion de Stock Halal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📦 Gestion de Stock Halal</h1>
+
+    <div>
+      <input type="text" id="nomProduit" placeholder="Nom du produit" />
+      <input type="number" id="quantiteProduit" placeholder="Quantité" />
+      <button onclick="ajouterProduit()">Ajouter</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Produit</th>
+          <th>Quantité</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableProduits">
+        <!-- Les produits vont ici -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
